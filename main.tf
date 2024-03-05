@@ -11,6 +11,8 @@ resource "aws_instance" "ansible-master" {
         Project = "MotoGP"
         Owner = "Aayush"
     }
+
+    vpc_security_group_ids = ["sg-09a15e0d7b9187cce"]
 }
 
 resource "aws_instance" "node_servers" {
@@ -23,6 +25,7 @@ resource "aws_instance" "node_servers" {
         Project = "MotoGP"
         Owner = "Aayush"
     }
+    vpc_security_group_ids = ["sg-09a15e0d7b9187cce"]
 }
 
 resource "aws_instance" "monitoring_server" {
@@ -35,5 +38,6 @@ resource "aws_instance" "monitoring_server" {
         Project = "MotoGP"
         Owner = "Aayush"
     }
+    vpc_security_group_ids = ["sg-09a15e0d7b9187cce"]
 }
 
