@@ -1,5 +1,5 @@
 
-# -----------------------------------------------------
+#---------------------------------------------------
 
 resource "aws_instance" "ansible-master" {
   count = 1
@@ -36,6 +36,4 @@ resource "aws_instance" "monitoring_server" {
         Owner = "Aayush"
     }
 }
-
-
 
