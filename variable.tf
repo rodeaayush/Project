@@ -1,5 +1,4 @@
-  
-variable "instance _count" {
+variable "instance_count" {
   description = "Number of instance to create"
   type = number
   default = 5

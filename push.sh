@@ -15,4 +15,4 @@ git commit -m "$1"
 # Push changes to the remote repository
 git push origin main  # Change 'master' to your branch if it's different
 
-echo "Git add, commit, and push completed successfully."
+echo "Git add, commit, and push completed successfully."
