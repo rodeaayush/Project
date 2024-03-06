@@ -1,0 +1,16 @@
+---
+- name: Install Nginx
+  hosts: all   # Replace 'node_server' with the name of your server or its IP address
+
+  tasks:
+    - name: Update apt package cache
+      become: yes  # This allows the task to run with root privileges
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      become: yes
+      apt:
+        name: nginx  # This is the package name for Nginx in Ubuntu/Debian systems
+        state: present  # Ensure that Nginx is present, you can use 'latest' to ensure it's up-to-date
+
